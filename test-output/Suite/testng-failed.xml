@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="org.scenario.PhoneNumberValid">
+        <methods>
+          <include name="phoneNumberNotValid"/>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="toLoadURl"/>
+        </methods>
+      </class> <!-- org.scenario.PhoneNumberValid -->
+      <class name="org.scenario.PhoneNumberValid2">
+        <methods>
+          <include name="phoneNumberValid"/>
+          <include name="launchBrowser"/>
+          <include name="phoneNumberNotInvalid"/>
+          <include name="tearDown"/>
+          <include name="toLoadURl"/>
+        </methods>
+      </class> <!-- org.scenario.PhoneNumberValid2 -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="5" name="Firefox(failed)">
+    <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="org.scenario.PhoneNumberValid">
+        <methods>
+          <include name="phoneNumberNotValid"/>
+          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="toLoadURl"/>
+        </methods>
+      </class> <!-- org.scenario.PhoneNumberValid -->
+      <class name="org.scenario.PhoneNumberValid2">
+        <methods>
+          <include name="phoneNumberValid"/>
+          <include name="launchBrowser"/>
+          <include name="phoneNumberNotInvalid"/>
+          <include name="tearDown"/>
+          <include name="toLoadURl"/>
+        </methods>
+      </class> <!-- org.scenario.PhoneNumberValid2 -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
